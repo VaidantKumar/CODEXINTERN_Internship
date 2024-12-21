@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <h1>Weather in {{ weather.city }}</h1>
+    <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+    <p><strong>Humidity:</strong> {{ weather.humidity }}%</p>
+    <p><strong>Condition:</strong> {{ weather.description }}</p>
+    <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon">
+    <a href="/">Check another city</a>
+</body>
+</html>
